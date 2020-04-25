@@ -5,7 +5,7 @@ class Right extends Component {
         return(
           <header id="right">
             <div>
-              <h1>Right</h1>
+              Right
             </div>
           </header>
         );

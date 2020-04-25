@@ -5,7 +5,7 @@ class Center extends Component {
         return(
           <header id="center">
             <div>
-              <h1>Center</h1>
+              Center
             </div>
           </header>
         );

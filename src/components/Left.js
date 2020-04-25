@@ -5,7 +5,7 @@ class Left extends Component {
         return(
           <header id="left">
             <div>
-              <h1>Left</h1>
+              Left
             </div>
           </header>
         );

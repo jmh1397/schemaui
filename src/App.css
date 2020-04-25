@@ -18,56 +18,54 @@ p {
   padding: 20px;
 }
 #header {
-  position: absolute;
+  position: fixed;
   top: 0;
-  width: 100%;
+  left:0;
+  transform: translate(12.5%, 0%);
+  width: 80%;
   height: 10%;
-  border: 1px solid blue;
   padding: 0px;
-  border-radius: 50px;
-  background-color: powderblue;
+  background-color: CadetBlue;
+}
+#footer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(12.5%, 900%);
+  width: 80%;
+  height: 10%;
+  padding: 0px;
+  background-color: DarkSeaGreen;
 }
 #left {
-  position: absolute;
+  position: fixed;
+  top: 0;
   left: 0;
-  width: 10%%;
-  height:100%;
-  border: 1px solid blue;
+  width: 10%;
+  height: 100%;
   padding: 0px;
-  border-radius: 0px;
-  background-color: powderblue;
+  background-color: Cornsilk;
 }
 #right {
-  position: absolute;
+  position: fixed;
+  top: 0;
   right: 0;
   height: 100%;
-  width: 10%%;
-  border: 1px solid blue;
+  width: 10%;
   padding: 0px;
-  border-radius: 0px;
-  background-color: powderblue;
+  background-color: DarkGray;
 }
 #center {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  transform: translate(12.5%, 10%);
   width: 80%;
   height: 80%;
-  border: 1px solid blue;
   padding: 0px;
-  border-radius: 0px;
   background-color: powderblue;
 }
-#footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  border: 1px solid blue;
-  padding: 0px;
-  border-radius: 0px;
-  background-color: powderblue;
-}
+
 /* The navbar container */
 .topnav {
   overflow: hidden;
@@ -118,14 +116,4 @@ p {
   background-color: #F1F1F1;
   text-align: center;
   padding: 10px;
-}
-
-#footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  border: 4px solid blue;
-  padding: 5px;
-  border-radius: 50px;
-  background-color: powderblue;
 }
