@@ -1,14 +1,19 @@
 import React, { Component } from 'react';
-import './App.css';
-
-import Canvass from './components/Canvass';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Left from './components/Left';
+import Right from './components/Right';
+import Center from './components/Center';
 
 class App extends Component {
   render() {
     return (
-            <div id="main">
-                <h1>Attempt 1</h1>
-                <Canvass />
+            <div id="MainApp">
+                <Header />
+                <Footer />
+                <Left />
+                <Right />
+                <Center />
             </div>
     );
   }
