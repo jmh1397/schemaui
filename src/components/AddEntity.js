@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 import '../App.css';
 import '../css/Form.css';
-class NewEntiry extends Component {
+
+class addEntity extends Component {
+  /*
   constructor(props){
       super(props);
       this.state = {
           showForm: false
       };
   }
+  */
   render(){
     return(
       <div class="col-2 col-s-2 menu">
@@ -25,4 +28,4 @@ class NewEntiry extends Component {
   }
 }
 
-export default (NewEntiry);
+export default (addEntity);

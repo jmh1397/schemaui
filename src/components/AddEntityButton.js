@@ -1,7 +1,9 @@
 import React from 'react'
+import '../App.css';
+import '../css/Buttons.css';
 
 const AddEntityButton = props => {
-  return <button onClick={props.addEntity}>Add Entity</button>
+  return 'a'
 }
-
-export default AddEntityButton
+// <optionButton onClick={props.addEntity}>Add Entity</optionButton>
+export default (AddEntityButton);
