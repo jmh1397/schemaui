@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import '../App.css';
+import '../css/App.css';
+import '../css/Menu.css';
 class Menu extends Component {
     render(){
         return(
-
-            <div class="col-3 col-s-3 menu">
+            <div class="col-2 col-s-2 menu">
               <ul>
                 <li>New Entity</li>
                 <li>-</li>
