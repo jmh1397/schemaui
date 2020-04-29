@@ -1,5 +1,9 @@
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
 body {
-  background-color: lightblue;
+  background-color: white;
 }
 
 h1 {
@@ -11,109 +15,4 @@ p {
   font-family: verdana;
   font-size: 20px;
 }
-
-.header {
-  background-color: #F1F1F1;
-  text-align: center;
-  padding: 20px;
-}
-#header {
-  position: fixed;
-  top: 0;
-  left:0;
-  transform: translate(12.5%, 0%);
-  width: 80%;
-  height: 10%;
-  padding: 0px;
-  background-color: CadetBlue;
-}
-#footer {
-  position: fixed;
-  top: 0;
-  left: 0;
-  transform: translate(12.5%, 900%);
-  width: 80%;
-  height: 10%;
-  padding: 0px;
-  background-color: DarkSeaGreen;
-}
-#left {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 10%;
-  height: 100%;
-  padding: 0px;
-  background-color: Cornsilk;
-}
-#right {
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 10%;
-  padding: 0px;
-  background-color: DarkGray;
-}
-#center {
-  position: fixed;
-  top: 0;
-  left: 0;
-  transform: translate(12.5%, 10%);
-  width: 80%;
-  height: 80%;
-  padding: 0px;
-  background-color: powderblue;
-}
-
-/* The navbar container */
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-/* Navbar links */
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Links - change color on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.column {
-  float: left;
-
-  background-color: Orange;
-  color:Tomato
-
-}
-
-/* Left and right column */
-.column.side {
-  width: 25%;
-}
-
-/* Middle column */
-.column.middle {
-  width: 50%;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column.side, .column.middle {
-    width: 100%;
-  }
-}
-.footer {
-  background-color: #F1F1F1;
-  text-align: center;
-  padding: 10px;
-}
+/* menu */
