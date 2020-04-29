@@ -6,11 +6,10 @@ class Menu extends Component{
   constructor(props){
       super(props);
       this.state = {expGroups: Boolean(false)};
-      //this.state ={expGroups: False}
       this.handeClickGroups = this.handeClickGroups.bind(this);
   }
   handeClickGroups () {
-      this.setState({expGroups: true});
+      this.setState({expGroups: !this.state.expGroups});
   }
   clickEntities () {
       alert('Entities Form')
@@ -20,20 +19,20 @@ class Menu extends Component{
   }
   render() {
             /*const { showForm } = this.state;*/
-            return (
-              <div class="col-2 col-s-2 menu">
-                  <ul>
-                    <li onClick={ this.handeClickGroups }>Groups</li>
-                    {this.state.expGroups ? <li>New Group</li>:''}
-                    {this.state.expGroups ? <li>Modify Group</li>:''}
-                    <li onClick={ this.clickEntities }>Entities </li>
-                    <li onClick={ this.clickRelationships  }>Relationships</li>
-                  </ul>
-                </div>
+    return (
+      <div class="col-2 col-s-2 menu">
+        <ul>
+          <li onClick={ this.handeClickGroups }>Groups</li>
+              {this.state.expGroups ? <li>--New Group</li>:''}
+              {this.state.expGroups ? <li>--Modify Group</li>:''}
+          <li onClick={ this.clickEntities }>Entities </li>
+          <li onClick={ this.clickRelationships  }>Relationships</li>
+        </ul>
+      </div>
 
-            );
-        }
+    );
   }
+}
 
 export default Menu;
     /*

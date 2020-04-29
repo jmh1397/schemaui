@@ -14,7 +14,7 @@ class addEntity extends Component {
   render(){
     return(
       <div class="col-2 col-s-2 menu">
-        <form action="/action_page.php">
+        <form action=alert('from action')>
           <div class="row">
             <label for="eame">Entity Name</label>
               <input type="text" id="ename" name="entityname" placeholder="No Spaces, a-z,1-9,-"/>
