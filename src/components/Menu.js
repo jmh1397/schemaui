@@ -3,8 +3,14 @@ import '../css/App.css';
 import '../css/Menu.css';
 import '../css/Buttons.css';
 class Menu extends Component{
-  clickGroups () {
-      alert('Groups Form')
+  constructor(props){
+      super(props);
+      this.state = {expGroups: Boolean(false)};
+      //this.state ={expGroups: False}
+      this.handeClickGroups = this.handeClickGroups.bind(this);
+  }
+  handeClickGroups () {
+      this.setState({expGroups: true});
   }
   clickEntities () {
       alert('Entities Form')
@@ -17,7 +23,9 @@ class Menu extends Component{
             return (
               <div class="col-2 col-s-2 menu">
                   <ul>
-                    <li onClick={ this.clickGroups }>Groups</li>
+                    <li onClick={ this.handeClickGroups }>Groups</li>
+                    {this.state.expGroups ? <li>New Group</li>:''}
+                    {this.state.expGroups ? <li>Modify Group</li>:''}
                     <li onClick={ this.clickEntities }>Entities </li>
                     <li onClick={ this.clickRelationships  }>Relationships</li>
                   </ul>
@@ -27,8 +35,13 @@ class Menu extends Component{
         }
   }
 
-    export default Menu;
+export default Menu;
     /*
+    {unreadMessages.length > 0 &&
+        <h2>
+          You have {unreadMessages.length} unread messages.
+        </h2>
+      }
         constructor(props){
             super(props);
             this.state = {
